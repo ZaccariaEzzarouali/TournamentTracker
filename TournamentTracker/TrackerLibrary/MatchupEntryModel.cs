@@ -21,7 +21,7 @@ namespace TrackerLibrary
         public MatchupModel ParentMatchup { get; set;  }
 
         public MatchupEntryModel(double initialscore) {
-            Console.WriteLine("ciao");
+            Console.WriteLine();
         }
     }
 }
