@@ -30,25 +30,25 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateTeamForm));
             this.teamNameLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.createTeamLabel = new System.Windows.Forms.Label();
             this.teamNameValue = new System.Windows.Forms.TextBox();
             this.addMemberButton = new System.Windows.Forms.Button();
             this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamMemberLabel = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.addNewMemberBox = new System.Windows.Forms.GroupBox();
             this.firstNameValue = new System.Windows.Forms.TextBox();
             this.firstNameLabel = new System.Windows.Forms.Label();
             this.lastNameValue = new System.Windows.Forms.TextBox();
             this.lastNameLabel = new System.Windows.Forms.Label();
             this.emailValue = new System.Windows.Forms.TextBox();
             this.emailLabel = new System.Windows.Forms.Label();
-            this.cellPhoneValue = new System.Windows.Forms.TextBox();
+            this.cellphoneValue = new System.Windows.Forms.TextBox();
             this.cellphoneLabel = new System.Windows.Forms.Label();
             this.createMemberLabel = new System.Windows.Forms.Button();
             this.teamMembersListBox = new System.Windows.Forms.ListBox();
             this.deleteSelectedMemberButton = new System.Windows.Forms.Button();
             this.createTeamButton = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.addNewMemberBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // teamNameLabel
@@ -63,18 +63,18 @@
             this.teamNameLabel.Text = "TeamName";
             this.teamNameLabel.Click += new System.EventHandler(this.entryFeeLabel_Click);
             // 
-            // label1
+            // createTeamLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(12, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 25);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Create Team";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.createTeamLabel.AutoSize = true;
+            this.createTeamLabel.BackColor = System.Drawing.Color.Transparent;
+            this.createTeamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createTeamLabel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.createTeamLabel.Location = new System.Drawing.Point(12, 20);
+            this.createTeamLabel.Name = "createTeamLabel";
+            this.createTeamLabel.Size = new System.Drawing.Size(136, 25);
+            this.createTeamLabel.TabIndex = 26;
+            this.createTeamLabel.Text = "Create Team";
+            this.createTeamLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // teamNameValue
             // 
@@ -119,24 +119,24 @@
             this.selectTeamMemberLabel.TabIndex = 33;
             this.selectTeamMemberLabel.Text = "Select Team Member";
             // 
-            // groupBox1
+            // addNewMemberBox
             // 
-            this.groupBox1.Controls.Add(this.createMemberLabel);
-            this.groupBox1.Controls.Add(this.cellPhoneValue);
-            this.groupBox1.Controls.Add(this.cellphoneLabel);
-            this.groupBox1.Controls.Add(this.emailValue);
-            this.groupBox1.Controls.Add(this.emailLabel);
-            this.groupBox1.Controls.Add(this.lastNameValue);
-            this.groupBox1.Controls.Add(this.lastNameLabel);
-            this.groupBox1.Controls.Add(this.firstNameValue);
-            this.groupBox1.Controls.Add(this.firstNameLabel);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(12, 325);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(321, 304);
-            this.groupBox1.TabIndex = 36;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add New Member";
+            this.addNewMemberBox.Controls.Add(this.createMemberLabel);
+            this.addNewMemberBox.Controls.Add(this.cellphoneValue);
+            this.addNewMemberBox.Controls.Add(this.cellphoneLabel);
+            this.addNewMemberBox.Controls.Add(this.emailValue);
+            this.addNewMemberBox.Controls.Add(this.emailLabel);
+            this.addNewMemberBox.Controls.Add(this.lastNameValue);
+            this.addNewMemberBox.Controls.Add(this.lastNameLabel);
+            this.addNewMemberBox.Controls.Add(this.firstNameValue);
+            this.addNewMemberBox.Controls.Add(this.firstNameLabel);
+            this.addNewMemberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.addNewMemberBox.Location = new System.Drawing.Point(12, 325);
+            this.addNewMemberBox.Name = "addNewMemberBox";
+            this.addNewMemberBox.Size = new System.Drawing.Size(321, 304);
+            this.addNewMemberBox.TabIndex = 36;
+            this.addNewMemberBox.TabStop = false;
+            this.addNewMemberBox.Text = "Add New Member";
             // 
             // firstNameValue
             // 
@@ -195,12 +195,12 @@
             this.emailLabel.TabIndex = 41;
             this.emailLabel.Text = "Email";
             // 
-            // cellPhoneValue
+            // cellphoneValue
             // 
-            this.cellPhoneValue.Location = new System.Drawing.Point(136, 206);
-            this.cellPhoneValue.Name = "cellPhoneValue";
-            this.cellPhoneValue.Size = new System.Drawing.Size(155, 31);
-            this.cellPhoneValue.TabIndex = 44;
+            this.cellphoneValue.Location = new System.Drawing.Point(136, 206);
+            this.cellphoneValue.Name = "cellphoneValue";
+            this.cellphoneValue.Size = new System.Drawing.Size(155, 31);
+            this.cellphoneValue.TabIndex = 44;
             // 
             // cellphoneLabel
             // 
@@ -277,18 +277,19 @@
             this.Controls.Add(this.createTeamButton);
             this.Controls.Add(this.deleteSelectedMemberButton);
             this.Controls.Add(this.teamMembersListBox);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.addNewMemberBox);
             this.Controls.Add(this.addMemberButton);
             this.Controls.Add(this.selectTeamMemberDropDown);
             this.Controls.Add(this.selectTeamMemberLabel);
             this.Controls.Add(this.teamNameValue);
             this.Controls.Add(this.teamNameLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.createTeamLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateTeamForm";
             this.Text = "Create Team";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Load += new System.EventHandler(this.CreateTeamForm_Load);
+            this.addNewMemberBox.ResumeLayout(false);
+            this.addNewMemberBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -296,19 +297,19 @@
 
         #endregion
         private Label teamNameLabel;
-        private Label label1;
+        private Label createTeamLabel;
         private TextBox teamNameValue;
         private Button addMemberButton;
         private ComboBox selectTeamMemberDropDown;
         private Label selectTeamMemberLabel;
-        private GroupBox groupBox1;
+        private GroupBox addNewMemberBox;
         private TextBox firstNameValue;
         private Label firstNameLabel;
         private TextBox emailValue;
         private Label emailLabel;
         private TextBox lastNameValue;
         private Label lastNameLabel;
-        private TextBox cellPhoneValue;
+        private TextBox cellphoneValue;
         private Label cellphoneLabel;
         private Button createMemberLabel;
         private ListBox teamMembersListBox;

@@ -37,13 +37,13 @@
             this.tournamentPlayersListBox = new System.Windows.Forms.ListBox();
             this.selectTeamDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.createTournamentLabel = new System.Windows.Forms.Label();
             this.createNewTeam = new System.Windows.Forms.LinkLabel();
             this.createPrizeButton = new System.Windows.Forms.Button();
             this.tournamentPlayersLabel = new System.Windows.Forms.Label();
             this.deleteSelectedPlayersButton = new System.Windows.Forms.Button();
             this.deleteSelectedPrizeButton = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.Teamlabel = new System.Windows.Forms.Label();
             this.prizesListBox = new System.Windows.Forms.ListBox();
             this.createTournamentButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -78,9 +78,9 @@
             this.entryFeeLabel.ForeColor = System.Drawing.Color.SteelBlue;
             this.entryFeeLabel.Location = new System.Drawing.Point(38, 194);
             this.entryFeeLabel.Name = "entryFeeLabel";
-            this.entryFeeLabel.Size = new System.Drawing.Size(109, 32);
+            this.entryFeeLabel.Size = new System.Drawing.Size(113, 32);
             this.entryFeeLabel.TabIndex = 24;
-            this.entryFeeLabel.Text = "Entry fee";
+            this.entryFeeLabel.Text = "Entry Fee";
             this.entryFeeLabel.Click += new System.EventHandler(this.teamTwoScoreLabel_Click);
             // 
             // tournamentNameValue
@@ -131,17 +131,17 @@
             this.selectTeamLabel.Text = "SelectTeam";
             this.selectTeamLabel.Click += new System.EventHandler(this.roundLabel_Click);
             // 
-            // label1
+            // createTournamentLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(45, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 37);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Create Tournament:";
+            this.createTournamentLabel.AutoSize = true;
+            this.createTournamentLabel.BackColor = System.Drawing.Color.Transparent;
+            this.createTournamentLabel.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.createTournamentLabel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.createTournamentLabel.Location = new System.Drawing.Point(45, 33);
+            this.createTournamentLabel.Name = "createTournamentLabel";
+            this.createTournamentLabel.Size = new System.Drawing.Size(248, 37);
+            this.createTournamentLabel.TabIndex = 14;
+            this.createTournamentLabel.Text = "Create Tournament:";
             // 
             // createNewTeam
             // 
@@ -207,16 +207,16 @@
             this.deleteSelectedPrizeButton.Text = "Delete Selected";
             this.deleteSelectedPrizeButton.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // Teamlabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(589, 332);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(178, 32);
-            this.label2.TabIndex = 33;
-            this.label2.Text = "Teams / Players";
+            this.Teamlabel.AutoSize = true;
+            this.Teamlabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Teamlabel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.Teamlabel.Location = new System.Drawing.Point(589, 332);
+            this.Teamlabel.Name = "Teamlabel";
+            this.Teamlabel.Size = new System.Drawing.Size(75, 32);
+            this.Teamlabel.TabIndex = 33;
+            this.Teamlabel.Text = "Prizes";
             // 
             // prizesListBox
             // 
@@ -250,7 +250,7 @@
             this.ClientSize = new System.Drawing.Size(1120, 635);
             this.Controls.Add(this.createTournamentButton);
             this.Controls.Add(this.deleteSelectedPrizeButton);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Teamlabel);
             this.Controls.Add(this.prizesListBox);
             this.Controls.Add(this.deleteSelectedPlayersButton);
             this.Controls.Add(this.tournamentPlayersLabel);
@@ -264,7 +264,7 @@
             this.Controls.Add(this.tournamentPlayersListBox);
             this.Controls.Add(this.selectTeamDropDown);
             this.Controls.Add(this.selectTeamLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.createTournamentLabel);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -286,13 +286,13 @@
         private ListBox tournamentPlayersListBox;
         private ComboBox selectTeamDropDown;
         private Label selectTeamLabel;
-        private Label label1;
+        private Label createTournamentLabel;
         private LinkLabel createNewTeam;
         private Button createPrizeButton;
         private Label tournamentPlayersLabel;
         private Button deleteSelectedPlayersButton;
         private Button deleteSelectedPrizeButton;
-        private Label label2;
+        private Label Teamlabel;
         private ListBox prizesListBox;
         private Button createTournamentButton;
     }
