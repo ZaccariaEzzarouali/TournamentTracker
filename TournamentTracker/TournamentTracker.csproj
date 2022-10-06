@@ -6,4 +6,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="TrackerLibrary\TrackerLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="TrackerLibrary\bin\Debug\net6.0\" />
+    <Folder Include="TrackerLibrary\bin\Release\net6.0\" />
+    <Folder Include="TrackerLibrary\obj\Debug\net6.0\refint\" />
+    <Folder Include="TrackerLibrary\obj\Debug\net6.0\ref\" />
+    <Folder Include="TrackerLibrary\obj\Release\net6.0\refint\" />
+    <Folder Include="TrackerLibrary\obj\Release\net6.0\ref\" />
+  </ItemGroup>
+
 </Project>

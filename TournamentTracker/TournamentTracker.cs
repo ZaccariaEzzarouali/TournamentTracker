@@ -1,6 +1,6 @@
 ﻿namespace TournamentTracker
 {
-    public class Class1
+    public class TournamentTracker
     {
 
     }
